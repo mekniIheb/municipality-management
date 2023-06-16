@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scene" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" prefHeight="56.0" prefWidth="234.0" text="Acceuil" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn1" layoutX="34.0" layoutY="87.0" mnemonicParsing="false" onAction="#GestionPersonnel" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion personnel" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="167.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion d'outils" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGV" layoutX="34.0" layoutY="333.0" mnemonicParsing="false" onAction="#GestionVecicule" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion des  véhicules " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="412.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="gestion des permis et des autorisations" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="250.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion de planification" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="422.0" layoutY="87.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion des évènements " textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSortir" layoutX="791.0" layoutY="454.0" mnemonicParsing="false" onAction="#Sortir" prefHeight="27.0" prefWidth="81.0" text="sortir" />
+      <Button layoutX="422.0" layoutY="167.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion des revenues " textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="422.0" layoutY="250.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="Gestion des dépenses " textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="422.0" layoutY="333.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="gestion des doleances " textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="422.0" layoutY="412.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: red;" text="gestion des interventions " textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="34.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

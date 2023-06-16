@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPersonelController">
+    <children>
+        <Button fx:id="btnAjout" layoutX="307.0" layoutY="437.0" mnemonicParsing="false" onAction="#addPersonel" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: red;" text="Ajouter" textFill="#f2f2f2">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="14.0" layoutY="14.0" text="ajout d'un personnel" textFill="#f8f8f8">
+            <font>
+                <Font name="System Italic" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblCin" layoutX="21.0" layoutY="147.0" prefHeight="17.0" prefWidth="52.0" text="CIN:" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="199.0" prefHeight="17.0" prefWidth="52.0" text="Nom :" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="250.0" prefHeight="17.0" prefWidth="69.0" text="Prenom :" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <TableView fx:id="table" layoutX="450.0" layoutY="144.0" prefHeight="246.0" prefWidth="436.0">
+            <columns>
+                <TableColumn fx:id="cinCol" prefWidth="69.0" text="CIN" />
+                <TableColumn fx:id="nomCol" prefWidth="81.0" text="Nom" />
+                <TableColumn fx:id="prenomCol" prefWidth="75.0" text="Prenom" />
+                <TableColumn fx:id="numCol" prefWidth="97.0" text="Numero" />
+                <TableColumn fx:id="addCol" prefWidth="88.0" text="Adresse" />
+            </columns>
+        </TableView>
+        <ImageView fx:id="img1" fitHeight="49.0" fitWidth="52.0" layoutX="844.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/téléchargement.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtCin" layoutX="144.0" layoutY="148.0" prefHeight="25.0" prefWidth="246.0" promptText="Cin" />
+        <TextField fx:id="txtNom" layoutX="144.0" layoutY="199.0" prefHeight="25.0" prefWidth="246.0" promptText="Nom" />
+        <TextField fx:id="txtPrenom" layoutX="144.0" layoutY="250.0" prefHeight="25.0" prefWidth="246.0" promptText="Prenom" />
+        <TextField fx:id="txtNum" layoutX="144.0" layoutY="300.0" prefHeight="25.0" prefWidth="246.0" promptText="Numero" />
+        <Label layoutX="21.0" layoutY="300.0" text="Numero :" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="353.0" text="Adresse :" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddresse" layoutX="144.0" layoutY="353.0" prefHeight="25.0" prefWidth="246.0" promptText="Adresse" />
+      <Button layoutX="206.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="109.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: red;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="17.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="790.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: red;" text="Sortir" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField layoutX="339.0" layoutY="77.0" prefHeight="32.0" prefWidth="223.0" promptText="saisir cin " />
+      <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="313.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/images.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="572.0" layoutY="77.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="68.0" style="-fx-background-image: logoo.png;" text="recherche" />
+    </children>
+</AnchorPane>

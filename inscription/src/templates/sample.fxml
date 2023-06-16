@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPersonelController">
+   <children>
+      <Label layoutX="111.0" layoutY="141.0" text="login:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="202.0" text="mot de passe :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPass" layoutX="254.0" layoutY="202.0" prefHeight="25.0" prefWidth="200.0" promptText="mot de passe" />
+      <TextField fx:id="txtLog" layoutX="254.0" layoutY="141.0" prefHeight="25.0" prefWidth="200.0" promptText="login" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="329.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/blog-wp-login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogin" layoutX="718.0" layoutY="398.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: red;" text="Connexion" textFill="WHITE" />
+      <Button fx:id="btnExit" layoutX="70.0" layoutY="397.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: red;" text="exit" textFill="WHITE" />
+   </children>
+</AnchorPane>
